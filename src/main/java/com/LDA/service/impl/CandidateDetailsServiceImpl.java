@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Optional;
 
 @Service
 public class CandidateDetailsServiceImpl implements CandidateDetailsService {
@@ -40,8 +41,11 @@ public class CandidateDetailsServiceImpl implements CandidateDetailsService {
         // Set the file name and URL in the candidateDetails entity
         candidateDetails.setAadharCardFileName(fileName);
         candidateDetails.setAadharCardFilePath("/documents/" + fileName);  // Assuming the images are served from this path
-
-        // Save the candidate details to the database
         return candidateDetailsRepository.save(candidateDetails);
+    }
+    @Override
+    public CandidateDetails getCandidateDetailsById(int id) {
+        Optional<CandidateDetails> candidateDetailsOptional = candidateDetailsRepository.findById(id);
+        return candidateDetailsOptional.orElse(null); // Return null if not found
     }
 }

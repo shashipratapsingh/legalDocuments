@@ -33,4 +33,15 @@ public class CandidateDetailsController  {
         CandidateDetails savedCandidateDetails = candidateDetailsService.saveCandidateDetails(candidateDetails, aadharCardFile);
         return ResponseEntity.ok(savedCandidateDetails);
     }
+
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAnyAuthority('ROLE_Admin', 'ROLE_Manager', 'ROLE_User')")
+    public ResponseEntity<CandidateDetails> getCandidateDetailsById(@PathVariable("id") int id) {
+        CandidateDetails candidateDetails = candidateDetailsService.getCandidateDetailsById(id);
+        if (candidateDetails != null) {
+            return ResponseEntity.ok(candidateDetails);
+        } else {
+            return ResponseEntity.notFound().build(); // Return 404 if candidate not found
+        }
+    }
 }

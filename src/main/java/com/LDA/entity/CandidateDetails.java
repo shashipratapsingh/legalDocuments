@@ -1,49 +1,36 @@
 package com.LDA.entity;
-
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.util.Arrays;
 import java.util.Date;
 
+@Setter
+@Getter
 @Data
 @Entity
 public class CandidateDetails {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
-    //@Column(name = "userName", nullable = false)
     private String candidateName;
-
     @Column(name = "fatherName")
     private String fatherName;
-
     @Column(name = "motherName")
     private String motherName;
-
     @Column(name = "dob")
     private String dob;
-
     @Column(name = "address")
     private String address;
-
     @Column(name = "aadharCardNumber", unique = true)
     private String aadharCardNumber;
-
     @Column(name = "panCardNumber", unique = true)
     private String panCardNumber;
-
     @Column(name = "createdBy")
     private Date createdBy;
-
     @Column(name = "updatedBy")
     private Date updatedBy;
-
-
     private String aadharCardFilePath;
     private String aadharCardFileName;
 
@@ -55,6 +42,42 @@ public class CandidateDetails {
     @PreUpdate
     protected void onUpdate() {
         updatedBy = new Date();
+    }
+
+    @Override
+    public String toString() {
+        return "CandidateDetails{" +
+                "id=" + id +
+                ", candidateName='" + candidateName + '\'' +
+                ", fatherName='" + fatherName + '\'' +
+                ", motherName='" + motherName + '\'' +
+                ", dob='" + dob + '\'' +
+                ", address='" + address + '\'' +
+                ", aadharCardNumber='" + aadharCardNumber + '\'' +
+                ", panCardNumber='" + panCardNumber + '\'' +
+                ", createdBy=" + createdBy +
+                ", updatedBy=" + updatedBy +
+                ", aadharCardFilePath='" + aadharCardFilePath + '\'' +
+                ", aadharCardFileName='" + aadharCardFileName + '\'' +
+                '}';
+    }
+
+    public CandidateDetails(int id, String candidateName, String fatherName, String motherName, String dob, String address, String aadharCardNumber, String panCardNumber, Date createdBy, Date updatedBy, String aadharCardFilePath, String aadharCardFileName) {
+        this.id = id;
+        this.candidateName = candidateName;
+        this.fatherName = fatherName;
+        this.motherName = motherName;
+        this.dob = dob;
+        this.address = address;
+        this.aadharCardNumber = aadharCardNumber;
+        this.panCardNumber = panCardNumber;
+        this.createdBy = createdBy;
+        this.updatedBy = updatedBy;
+        this.aadharCardFilePath = aadharCardFilePath;
+        this.aadharCardFileName = aadharCardFileName;
+    }
+
+    public CandidateDetails() {
     }
 
     public int getId() {
@@ -150,39 +173,6 @@ public class CandidateDetails {
     }
 
     public void setAadharCardFileName(String aadharCardFileName) {
-        this.aadharCardFileName = aadharCardFileName;
-    }
-
-    @Override
-    public String toString() {
-        return "CandidateDetails{" +
-                "id=" + id +
-                ", candidateName='" + candidateName + '\'' +
-                ", fatherName='" + fatherName + '\'' +
-                ", motherName='" + motherName + '\'' +
-                ", dob='" + dob + '\'' +
-                ", address='" + address + '\'' +
-                ", aadharCardNumber='" + aadharCardNumber + '\'' +
-                ", panCardNumber='" + panCardNumber + '\'' +
-                ", createdBy=" + createdBy +
-                ", updatedBy=" + updatedBy +
-                ", aadharCardFilePath='" + aadharCardFilePath + '\'' +
-                ", aadharCardFileName='" + aadharCardFileName + '\'' +
-                '}';
-    }
-
-    public CandidateDetails(int id, String candidateName, String fatherName, String motherName, String dob, String address, String aadharCardNumber, String panCardNumber, Date createdBy, Date updatedBy, String aadharCardFilePath, String aadharCardFileName) {
-        this.id = id;
-        this.candidateName = candidateName;
-        this.fatherName = fatherName;
-        this.motherName = motherName;
-        this.dob = dob;
-        this.address = address;
-        this.aadharCardNumber = aadharCardNumber;
-        this.panCardNumber = panCardNumber;
-        this.createdBy = createdBy;
-        this.updatedBy = updatedBy;
-        this.aadharCardFilePath = aadharCardFilePath;
         this.aadharCardFileName = aadharCardFileName;
     }
 }

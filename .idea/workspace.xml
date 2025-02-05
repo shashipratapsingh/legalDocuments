@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7e64dd6-e661-498b-9c6b-0a03df265aa2" name="Changes" comment="minnor fix">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/controller/CandidateDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/controller/CandidateDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/controller_advice/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/ExceptionHandel/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/entity/CandidateDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/entity/CandidateDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/service/CandidateDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/service/CandidateDetailsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/service/impl/CandidateDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/service/impl/CandidateDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LDA/controller/CandidateDetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LDA/controller/CandidateDetailsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LDA/controller_advice/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LDA/entity/CandidateDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LDA/entity/CandidateDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LDA/service/CandidateDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LDA/service/CandidateDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/LDA/service/impl/CandidateDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/LDA/service/impl/CandidateDetailsServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

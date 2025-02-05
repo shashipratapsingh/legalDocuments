@@ -8,4 +8,5 @@ import java.io.IOException;
 public interface CandidateDetailsService {
 
     CandidateDetails saveCandidateDetails(CandidateDetails candidateDetails, MultipartFile aadharCardFile) throws IOException;
+    CandidateDetails getCandidateDetailsById(int id);
 }
