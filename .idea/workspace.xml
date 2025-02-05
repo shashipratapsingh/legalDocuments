@@ -62,6 +62,7 @@
     "Application.FindSecondHighestNumber.executor": "Run",
     "Application.FirstLetter.executor": "Run",
     "Application.GroupByLength.executor": "Run",
+    "Application.LegalDocumentsApplication.executor": "Run",
     "Application.LengthGreaterGivenNumber.executor": "Run",
     "Application.ReversString.executor": "Debug",
     "Application.SecondHeightNumber.executor": "Run",
@@ -75,6 +76,8 @@
     "Maven.AuthServices [deploy].executor": "Run",
     "Maven.AuthServices [install].executor": "Run",
     "Maven.CSLA [clean].executor": "Run",
+    "Maven.LDA [clean].executor": "Run",
+    "Maven.LDA [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -87,13 +90,13 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.AuthServicesApplication">
+  <component name="RunManager" selected="Application.LegalDocumentsApplication">
     <configuration name="AuthServicesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CSLA.AuthServicesApplication" />
       <module name="CSLA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.CSLA.*" />
+          <option name="PATTERN" value="com.LDA.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,11 +105,11 @@
       </method>
     </configuration>
     <configuration name="FindDuplicateElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.CSLA.util.FindDuplicateElements" />
+      <option name="MAIN_CLASS_NAME" value="com.LDA.util.FindDuplicateElements" />
       <module name="CSLA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.CSLA.util.*" />
+          <option name="PATTERN" value="com.LDA.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +118,11 @@
       </method>
     </configuration>
     <configuration name="FirstLetter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.CSLA.util.FirstLetter" />
+      <option name="MAIN_CLASS_NAME" value="com.LDA.util.FirstLetter" />
       <module name="CSLA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.CSLA.util.*" />
+          <option name="PATTERN" value="com.LDA.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveDuplicateList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.CSLA.util.RemoveDuplicateList" />
+    <configuration name="LegalDocumentsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.LDA.LegalDocumentsApplication" />
       <module name="CSLA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.CSLA.util.*" />
+          <option name="PATTERN" value="com.LDA.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +144,11 @@
       </method>
     </configuration>
     <configuration name="ShortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.CSLA.util.ShortList" />
+      <option name="MAIN_CLASS_NAME" value="com.LDA.util.ShortList" />
       <module name="CSLA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.CSLA.util.*" />
+          <option name="PATTERN" value="com.LDA.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LegalDocumentsApplication" />
         <item itemvalue="Application.AuthServicesApplication" />
         <item itemvalue="Application.FindDuplicateElements" />
         <item itemvalue="Application.ShortList" />
         <item itemvalue="Application.FirstLetter" />
-        <item itemvalue="Application.RemoveDuplicateList" />
       </list>
     </recent_temporary>
   </component>
