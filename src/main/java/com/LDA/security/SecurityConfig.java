@@ -39,6 +39,8 @@ public class SecurityConfig {
                         requestMatchers(
                                 "/",
                                 "/auth/**",
+                                "/documents/**",
+                                "file:///D:/BeProjects/LegalDocuments/src/main/resources/static/documents/",
                                 "/error")
                         .permitAll()
                         .requestMatchers("/admin/**").hasRole("Admin") // Admin-only APIs

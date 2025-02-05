@@ -5,11 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Arrays;
 import java.util.Date;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 public class CandidateDetails {
 
@@ -43,6 +42,10 @@ public class CandidateDetails {
 
     @Column(name = "updatedBy")
     private Date updatedBy;
+
+
+    private String aadharCardFilePath;
+    private String aadharCardFileName;
 
     @PrePersist
     protected void onCreate() {
@@ -134,9 +137,25 @@ public class CandidateDetails {
         this.updatedBy = updatedBy;
     }
 
+    public String getAadharCardFilePath() {
+        return aadharCardFilePath;
+    }
+
+    public void setAadharCardFilePath(String aadharCardFilePath) {
+        this.aadharCardFilePath = aadharCardFilePath;
+    }
+
+    public String getAadharCardFileName() {
+        return aadharCardFileName;
+    }
+
+    public void setAadharCardFileName(String aadharCardFileName) {
+        this.aadharCardFileName = aadharCardFileName;
+    }
+
     @Override
     public String toString() {
-        return "Userdetails{" +
+        return "CandidateDetails{" +
                 "id=" + id +
                 ", candidateName='" + candidateName + '\'' +
                 ", fatherName='" + fatherName + '\'' +
@@ -147,6 +166,23 @@ public class CandidateDetails {
                 ", panCardNumber='" + panCardNumber + '\'' +
                 ", createdBy=" + createdBy +
                 ", updatedBy=" + updatedBy +
+                ", aadharCardFilePath='" + aadharCardFilePath + '\'' +
+                ", aadharCardFileName='" + aadharCardFileName + '\'' +
                 '}';
+    }
+
+    public CandidateDetails(int id, String candidateName, String fatherName, String motherName, String dob, String address, String aadharCardNumber, String panCardNumber, Date createdBy, Date updatedBy, String aadharCardFilePath, String aadharCardFileName) {
+        this.id = id;
+        this.candidateName = candidateName;
+        this.fatherName = fatherName;
+        this.motherName = motherName;
+        this.dob = dob;
+        this.address = address;
+        this.aadharCardNumber = aadharCardNumber;
+        this.panCardNumber = panCardNumber;
+        this.createdBy = createdBy;
+        this.updatedBy = updatedBy;
+        this.aadharCardFilePath = aadharCardFilePath;
+        this.aadharCardFileName = aadharCardFileName;
     }
 }

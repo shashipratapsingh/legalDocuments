@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7e64dd6-e661-498b-9c6b-0a03df265aa2" name="Changes" comment="minnor fix" />
+    <list default="true" id="e7e64dd6-e661-498b-9c6b-0a03df265aa2" name="Changes" comment="minnor fix">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/controller/CandidateDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/controller/CandidateDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/entity/CandidateDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/entity/CandidateDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/service/CandidateDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/service/CandidateDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/LDA/service/impl/CandidateDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/LDA/service/impl/CandidateDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +37,12 @@
     &quot;assignee&quot;: &quot;shashipratapsingh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/shashipratapsingh/CSLA.git&quot;,
-    &quot;accountId&quot;: &quot;0cb0aa5f-6ad6-40f9-93e0-487418ecc9a9&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/shashipratapsingh/legalDocuments.git",
+    "accountId": "0cb0aa5f-6ad6-40f9-93e0-487418ecc9a9"
   }
-}</component>
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -62,7 +71,7 @@
     "Application.FindSecondHighestNumber.executor": "Run",
     "Application.FirstLetter.executor": "Run",
     "Application.GroupByLength.executor": "Run",
-    "Application.LegalDocumentsApplication.executor": "Run",
+    "Application.LegalDocumentsApplication.executor": "Debug",
     "Application.LengthGreaterGivenNumber.executor": "Run",
     "Application.ReversString.executor": "Debug",
     "Application.SecondHeightNumber.executor": "Run",
@@ -185,6 +194,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="minnor fix" />
